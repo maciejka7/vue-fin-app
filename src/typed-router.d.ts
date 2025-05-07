@@ -19,9 +19,13 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
+    '/(auth)/sign-in': RouteRecordInfo<'/(auth)/sign-in', '/sign-in', Record<never, never>, Record<never, never>>,
+    '/(auth)/sign-up': RouteRecordInfo<'/(auth)/sign-up', '/sign-up', Record<never, never>, Record<never, never>>,
     '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
-    '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
-    '/hi/[name]': RouteRecordInfo<'/hi/[name]', '/hi/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
+    '/budgets/(budgets)': RouteRecordInfo<'/budgets/(budgets)', '/budgets', Record<never, never>, Record<never, never>>,
+    '/pots/(pots)': RouteRecordInfo<'/pots/(pots)', '/pots', Record<never, never>, Record<never, never>>,
     '/README': RouteRecordInfo<'/README', '/README', Record<never, never>, Record<never, never>>,
+    '/recurring-bills/(recurring-bills)': RouteRecordInfo<'/recurring-bills/(recurring-bills)', '/recurring-bills', Record<never, never>, Record<never, never>>,
+    '/transactions/(transactions)': RouteRecordInfo<'/transactions/(transactions)', '/transactions', Record<never, never>, Record<never, never>>,
   }
 }
